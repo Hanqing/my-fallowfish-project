@@ -8,6 +8,7 @@
     <IndexTypes :typeList="typeList"></IndexTypes>
     <SmallBanner :smBanner="smBanner"></SmallBanner>
     <IndexNav :news="news" :nears="nears" :recoms="recoms"></IndexNav>
+    <NavBottom></NavBottom>
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import IndexTypes from '@/components/indextypes/IndexTypes'
 import IndexBanner from '@/components/indexbanner/IndexBanner'
 import SmallBanner from '@/components/smallbanner/SmallBanner'
 import IndexNav from '@/components/indexnav/IndexNav'
+import NavBottom from '@/components/navbottom/NavBottom'
 import Head from '@/components/head/Head'
 export default {
   name: 'App',
@@ -28,7 +30,8 @@ export default {
     Head,
     IndexTypes,
     SmallBanner,
-    IndexNav
+    IndexNav,
+    NavBottom
   },
   data() {
     return {
