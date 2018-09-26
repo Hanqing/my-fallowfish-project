@@ -1,102 +1,103 @@
 const actions = {
-  setCurIndex ({ commit }, index) {
-    commit('setCurIndex', index)
+  setCurIndex({ commit },index) {
+    commit('setCurIndex',index)
   },
-  hasLogin ({ commit }) {
-    if (window.localStorage.getItem('username') != null && window.localStorage.getItem('password') != null) {
+  hasLogin({ commit }) {
+    if(window.localStorage.getItem('username') != null && window.localStorage.getItem('password') != null) {
       commit('hasLogin')
-    } else {
+    }else {
       console.log('没有登录')
     }
   },
-  // 用户名
-  setUsername ({ commit }, username) {
+  //用户名
+  setUsername({ commit }, username) {
     commit('setUsername', username)
   },
-  // 用户信息
-  setUserinfo ({commit}, userinfo) {
-    commit('setUserinfo', userinfo)
+  //用户信息
+  setUserinfo({commit}, userinfo){
+		commit('setUserinfo', userinfo)
   },
-  // 被赞数
-  setStarnum ({ commit }) {
+  //被赞数
+  setStarnum({ commit }) {
     commit('setStarnum')
   },
-  cutStarnum ({ commit }) {
+  cutStarnum({ commit }) {
     commit('cutStarnum')
   },
-  // 关注数
-  setFocusnum ({ commit }) {
+  //关注数
+  setFocusnum({ commit }) {
     commit('setFocusnum')
   },
-  cutFocusnum ({ commit }) {
+  cutFocusnum({ commit }) {
     commit('cutFocusnum')
   },
-  // 发布数
-  setFabunum ({ commit }) {
+  //发布数
+  setFabunum({ commit }) {
     commit('setFabunum')
   },
-  cutFabunum ({ commit }) {
+  cutFabunum({ commit }) {
     commit('cutFabunum')
   },
-  // 粉丝数
-  setFannum ({ commit }) {
+  //粉丝数
+  setFannum({ commit }) {
     commit('setFannum')
   },
-  cutFannum ({ commit }) {
+  cutFannum({ commit }) {
     commit('cutFannum')
   },
-  // 卖出数
-  setSellnum ({ commit }) {
-    commit('setSellnum')
+  //卖出数
+  setSellnum({ commit }){
+		commit('setSellnum')
   },
-  // 买到数
-  setBuynum ({ commit }) {
-    commit('setBuynum')
+  //买到数
+	setBuynum({ commit }){
+		commit('setBuynum')
   },
-  // 赞过的
-  setLikenum ({ commit }) {
-    commit('setLikenum')
+  //赞过的
+	setLikenum({ commit }){
+		commit('setLikenum')
   },
-  cutSellnum ({ commit }) {
-    commit('cutSellnum')
+  cutSellnum({ commit }){
+		commit('cutSellnum')
+	},
+	cutBuynum({ commit }){
+		commit('cutBuynum')
   },
-  cutBuynum ({ commit }) {
-    commit('cutBuynum')
+  cutLikenum({ commit }){
+		commit('cutLikenum')
   },
-  cutLikenum ({ commit }) {
-    commit('cutLikenum')
-  },
-  // 登陆状态false
-  noLogin ({ commit }) {
-    if (window.localStorage.getItem('username') == null && window.localStorage.getItem('password') == null) {
+  //登陆状态false
+  noLogin({ commit }) {
+    if(window.localStorage.getItem('username') == null && window.localStorage.getItem('password') == null) {
       commit('noLogin')
     }
   },
-  // 传递数据
-  setNews: ({ commit }, news) => {
+  //传递数据
+  setNews: ({ commit }, news) =>{
     commit('setNews', news)
   },
-  setAddr: ({ commit }, address) => {
+  setAddr: ({ commit }, address)=> {
     commit('setAddr', address)
   },
-  setGoods: ({ commit }, good) => {
+  setGoods: ({ commit }, good)=> {
     commit('setGoods', good)
   },
-  cutGoods: ({ commit }, index) => {
+  cutGoods: ({ commit }, index)=> {
     commit('cutGoods', index)
   },
-  setReceive: ({ commit }, obj) => {
+  setReceive: ({ commit }, obj)=> {
     commit('setReceive', obj)
   },
-  setDel: ({ commit }, obj) => {
+  setDel: ({ commit }, obj)=> {
     commit('setDel', obj)
   },
-  setFabuinfo: ({ commit }, info) => {
+  setFabuinfo: ({ commit },info)=> {
     commit('setFabuinfo', info)
   },
   cutFabuinfo: ({commit}, index) => {
-    commit('cutFabuinfo', index)
-  }
+		commit('cutFabuinfo', index)
+	},
+
 }
 
 export default actions

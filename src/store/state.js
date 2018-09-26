@@ -15,6 +15,8 @@ const state = {
   address: {},
   goods: [],
   fabuinfo: []
+
+
 }
 
 export default state

@@ -1,87 +1,98 @@
+
 const mutations = {
-  setCurIndex (state, index) {
+  setCurIndex(state,index) {
     state.curIndex = index
   },
-  hasLogin (state) {
+  hasLogin(state) {
     state.isLogin = true
   },
-  setUsername (state, username) {
+  //用户名
+  setUsername(state, username) {
     state.username = username
   },
-  setStarnum (state) {
+  //被赞数
+  setStarnum(state) {
     state.starnum++
   },
-  cutStarnum (state) {
+  cutStarnum(state) {
     state.starnum--
   },
-  setFannum (state) {
+  //粉丝数
+  setFannum(state) {
     state.fannum++
   },
-  cutFannum (state) {
+  cutFannum(state) {
     state.fannum--
   },
-  setFocusnum (state) {
-    state.focusnum++
+  //关注数
+  setFocusnum(state) {
+    state.focusnum ++
   },
-  cutFocusnum (state) {
-    state.focusnum--
+  cutFocusnum(state) {
+    state.focusnum --
   },
-  setFabunum (state) {
-    state.fabunum++
+  //发布数
+  setFabunum(state) {
+    state.fabunum ++
   },
-  cutFabunum (state) {
-    state.fabunum--
+  cutFabunum(state) {
+    state.fabunum --
   },
-  setSellnum (state) {
-    state.sellnum++
+  //卖出数
+  setSellnum(state) {
+    state.sellnum ++
   },
-  cutSellnum (state) {
-    state.sellnum--
+  cutSellnum(state) {
+    state.sellnum --
   },
-  setBuynum (state) {
+  //买到数
+  setBuynum(state) {
     state.buynum++
   },
-  cutBuynum (state) {
-    state.buynum--
+  cutBuynum(state) {
+    state.buynum --
   },
-  setLikenum (state) {
-    state.likenum++
+  //赞过的
+  setLikenum(state) {
+    state.likenum ++
   },
-  cutLikenum (state) {
-    state.likenum--
+  cutLikenum(state) {
+    state.likenum --
   },
-  setUserinfo (state, userinfo) {
+  //获取用户信息
+  setUserinfo(state,userinfo) {
     window.localStorage.setItem('useravatar', userinfo.avatar)
     state.userinfo = userinfo
   },
-  noLogin (state) {
+  //登陆状态为false
+  noLogin(state) {
     state.isLogin = false
   },
-  setNews (state, news) {
+  setNews(state, news) {
     state.news = news
   },
-  setAddr (state, address) {
+  setAddr(state, address) {
     state.address = address
   },
-  setGoods (state, good) {
+  setGoods(state, good) {
     state.goods.push(good)
   },
-  cutGoods (state, index) {
+  cutGoods(state, index) {
     state.goods.splice(index, 1)
-    state.buynum--
+    state.buynum --
   },
-  setReceive (state, obj) {
+  setReceive(state, obj) {
     state.goods[obj.index].receive = obj.receive
   },
-  setDel (state, obj) {
+  setDel(state, obj) {
     state.goods[obj.index].del = obj.del
   },
-  setFabuinfo (state, info) {
+  setFabuinfo(state, info) {
     state.fabuinfo.push(info)
   },
-  cutFabuinfo (state, index) {
+  cutFabuinfo(state, index) {
     state.fabuinfo.splice(index, 1)
-    state.fabunum--
+    state.fabunum --
   }
 }
 

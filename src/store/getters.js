@@ -1,46 +1,50 @@
 const getters = {
-  login: (state) => {
+  login: (state)=> {
     return state.isLogin
   },
-  username: (state) => {
+  username: (state)=> {
     return state.username
   },
-  starnum: (state) => {
+  starnum: (state)=> {
     return state.starnum
   },
-  focusnum: (state) => {
+  focusnum: (state)=> {
     return state.focusnum
   },
-  fabunum: (state) => {
+  fabunum: (state)=> {
     return state.fabunum
   },
-  fannum: (state) => {
+  fannum: (state)=> {
     return state.fannum
   },
-  sellnum: (state) => {
+  sellnum: (state)=> {
     return state.sellnum
   },
-  buynum: (state) => {
+  buynum: (state)=> {
     return state.buynum
   },
-  likenum: (state) => {
+  likenum: (state)=> {
     return state.likenum
   },
-  money: (state) => {
+  money: (state)=> {
     return state.money
   },
-  news: (state) => {
+  username: (state)=> {
+    return state.username
+  },
+  news: (state)=> {
     return state.news
   },
-  address: (state) => {
+  address: (state)=> {
     return state.address
   },
-  goods: (state) => {
+  goods: (state)=> {
     return state.goods
   },
-  fabuinfo: (state) => {
+  fabuinfo: (state)=> {
     return state.fabuinfo
   }
+  
 }
 
 export default getters

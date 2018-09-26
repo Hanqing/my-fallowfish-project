@@ -5,15 +5,16 @@ import App from './App'
 import router from './router'
 import './stylus/reset.styl'
 import './assets/utils/rem.js'
-import 'mint-ui/lib/style.css'
-import { Mint, Toast } from 'mint-ui'
+import Mint from 'mint-ui';
+import 'mint-ui/lib/style.css';
+import { Toast } from 'mint-ui'
 import VueLazyload from 'vue-lazyload'
 import './common/stylus/index.styl'
 import store from './store'
 
 Vue.use(VueLazyload)
-Vue.use(Mint)
-Vue.$toast = Vue.prototype.$toast = Toast
+Vue.use(Mint);
+Vue.$toast = Vue.prototype.$toast = Toast;
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
